@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_08_19_153650) do
+ActiveRecord::Schema.define(version: 2019_08_19_205349) do
 
   create_table "items", force: :cascade do |t|
     t.string "name"
@@ -19,18 +19,33 @@ ActiveRecord::Schema.define(version: 2019_08_19_153650) do
     t.string "img_url"
     t.integer "price"
     t.boolean "availability"
-    t.integer "user_id"
+    t.integer "owner_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["user_id"], name: "index_items_on_user_id"
   end
 
-  create_table "users", force: :cascade do |t|
+  create_table "owners", force: :cascade do |t|
     t.string "name"
-    t.string "email"
-    t.string "password"
+    t.string "username"
     t.string "address"
-    t.integer "rating"
+    t.string "image"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "rentals", force: :cascade do |t|
+    t.integer "item_id"
+    t.integer "owner_id"
+    t.integer "renter_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "renters", force: :cascade do |t|
+    t.string "name"
+    t.string "username"
+    t.string "address"
+    t.string "image"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

@@ -7,7 +7,7 @@ class CreateItems < ActiveRecord::Migration[5.2]
       t.string :img_url
       t.integer :price
       t.boolean :availability
-      t.references :user, foreign_key: true
+      t.integer :owner_id
 
       t.timestamps
     end
