@@ -8,12 +8,6 @@
 
 require "faker"
 
-t.string :name
-t.string :email
-t.string :password
-t.string :address
-t.integer :rating
-
 
 # Users
 User.create(
@@ -23,6 +17,39 @@ User.create(
   address: 
   rating:
 )
+
+User.create(
+  name: 
+  email: 
+  password: 
+  address: 
+  rating:
+)
+
+User.create(
+  name: 
+  email: 
+  password: 
+  address: 
+  rating:
+)
+
+User.create(
+  name: 
+  email: 
+  password: 
+  address: 
+  rating:
+)
+
+User.create(
+  name: 
+  email: 
+  password: 
+  address: 
+  rating:
+)
+
 
 # Items
 Item.create(
