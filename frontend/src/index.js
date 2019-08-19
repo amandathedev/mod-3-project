@@ -6,3 +6,7 @@ const rentersUrl = `${rootUrl}/renters`
 
 // HTML components
 const mainDiv = document.getElementById('main-div')
+
+const createCard = () => {
+  
+}
