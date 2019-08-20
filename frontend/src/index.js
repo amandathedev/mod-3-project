@@ -8,5 +8,6 @@ const rentersUrl = `${rootUrl}/renters`
 const mainDiv = document.getElementById('main-div')
 
 const createCard = () => {
+  const itemCard = document.createElement('div')
   
 }
