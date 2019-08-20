@@ -1,5 +1,5 @@
-Build the API
-Seed data
+Build the API - DONE-ish
+Seed data - DONE
 Add model: rentals
 App name
 Login -- like Netflix? --> Seed user photos
